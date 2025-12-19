@@ -11,11 +11,16 @@ export const environment = {
       }
   },
   apiConfig: {
-      scopes: ['ENTER_SCOPE'],
-      uri: 'ENTER_URI'
+      scopes: ['User.Read', 'openid'],
+      uri: 'https://login.microsoftonline.com/stevenchalkoutlook.onmicrosoft.com'
   }
 };
 
+//   msalConfig: {
+//       auth: {
+//           clientId: '6ee12f99-4b04-410d-ac50-744778d1f737',
+//           authority: 'https://login.microsoftonline.com/stevenchalkoutlook.onmicrosoft.com'
+//       }
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
